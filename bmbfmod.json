@@ -1,0 +1,30 @@
+{
+  "id": "PracticePlus",
+  "name": "PracticePlus",
+  "version": "0.4.0",
+  "author": "Mott's Applesauce",
+  "description": [
+    "Updated version of the PracticePlus mod originally created by L_ : https://github.com/L025/PracticePlus",
+    "This mod allows you to set the NJS and note offset for a song in practice mode, and lets you play the song anywhere from 25%-300% speed"
+  ],
+  "category": "Gameplay",
+  "gameVersion": "1.13.2",
+  "platform": "Quest",
+  "components": [
+    {
+      "type": "HookMod",
+      "installAction": {
+        "installLibraryFile": "libPracticePlus.so"
+      },
+      "uninstallAction": {
+        "removeLibraryFile": "libPracticePlus.so"
+      }
+    },
+    {
+      "type": "HookModLibrary",
+      "installAction": {
+        "installLibraryFile": "libbeatsaber-hook_1_1_2.so"
+      }
+    }
+  ]
+}
